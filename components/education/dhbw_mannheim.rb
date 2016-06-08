@@ -1,0 +1,6 @@
+@from="10/2013"
+@until="10/2016"
+@name="DHBW Mannheim"
+@location="Neumagen-Dhron"
+@degree="Bachelor of Applied Computer Science"
+@description="Currently writing the Bachelor Thesis."

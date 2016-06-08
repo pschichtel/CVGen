@@ -1,0 +1,7 @@
+<%= @from %> - <%= @until %> | <%= @name %>, <%= @location %>
+<%- if defined?(@description) -%>
+<%= @description %>
+<%- end -%>
+<%- if defined?(@degree) -%>
+<%= @degree %><%= " (" + @grade + ")" if defined?(@grade) %>
+<%- end -%>

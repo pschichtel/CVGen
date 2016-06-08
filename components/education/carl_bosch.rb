@@ -1,0 +1,7 @@
+@from="09/2011"
+@until="07/2013"
+@name="Carl-Bosch-Schule"
+@location="Heidelberg"
+@degree="Fachhochschulreife"
+@grade="1.6"
+@description="Specialization: Communication and Design"

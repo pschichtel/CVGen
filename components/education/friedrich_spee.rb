@@ -1,0 +1,6 @@
+@from="02/2010"
+@until="06/2011"
+@name="Friedrich-Spee-Realschule"
+@location="Neumagen-Dhron"
+@degree="Mittlere Reife"
+@grade="2.5"

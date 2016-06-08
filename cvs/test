@@ -1,0 +1,6 @@
+components=(bio education experience activity)
+
+bio=complete_me
+educations=(st_helena nkg friedrich_spee carl_bosch dhbw_mannheim)
+experiences=(mindnet scalait amadeus_intern amadeus_pre amadeus_1 amadeus_2 amadeus_3 amadeus_4 amadeus_5 amadeus_6)
+activities=(procup cubeisland app_dev)

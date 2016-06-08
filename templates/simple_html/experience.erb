@@ -1,0 +1,7 @@
+<%= @from %> - <%= @until %> | <%= @name %>, <%= @location %>
+<%= @description %>
+<%- if defined?(@applied_tech) -%>
+<%- @applied_tech.each do |tech| -%>
+- <%= tech %>
+<%- end -%>
+<%- end -%>

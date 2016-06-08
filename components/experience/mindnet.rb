@@ -1,0 +1,5 @@
+@from="05/2012"
+@until="06/2012"
+@name="Mindnet-Systemhaus"
+@location="Ludwigshafen (Rhein)"
+@description="Web Development with PHP"
