@@ -1,7 +1,12 @@
-<%= @from %> - <%= @until %> | <%= @name %>, <%= @location %>
-<%- if defined?(@description) -%>
-<%= @description %>
-<%- end -%>
-<%- if defined?(@degree) -%>
-<%= @degree %><%= " (" + @grade + ")" if defined?(@grade) %>
-<%- end -%>
+<div class="line">
+    <div><%= @from %> - <%= @until %></div>
+    <div>
+        <div><%= @name %>, <%= @location %></div>
+        <%- if defined?(@description) -%>
+        <div><%= @description %></div>
+        <%- end -%>
+        <%- if defined?(@degree) -%>
+        <div><%= @degree %><%= " (" + @grade + ")" if defined?(@grade) %></div>
+        <%- end -%>
+    </div>
+</div>

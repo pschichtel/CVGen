@@ -1,4 +1,4 @@
-@from="08/1999"
-@until="07/2003"
+@from="08/2003"
+@until="01/2010"
 @name="Nikolaus-von-Kues-Gymnasium"
 @location="Bernkastel-Kues"

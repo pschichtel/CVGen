@@ -1,3 +1,4 @@
+
 build_component() {
     if [ -z "$educations" ]
     then
@@ -5,8 +6,12 @@ build_component() {
         exit 4
     fi
     
-    for i in "${educations[@]}"
-    do
-        "${erb[@]}" -r "${comp_base}/${i}" "${template_dir}/education.erb"
-    done
+    local c=$(
+        for i in "${educations[@]}"
+        do
+            "${erb[@]}" -r "${comp_base}/${i}" "${template_dir}/education.erb"
+        done
+    )
+    
+    CONTENT="$c" "${erb[@]}" "${template_dir}/educations.erb"
 }

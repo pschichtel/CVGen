@@ -1,7 +1,10 @@
-<%= @from %> - <%= @until %> | <%= @name %>, <%= @location %>
-<%= @description %>
-<%- if defined?(@applied_tech) -%>
-<%- @applied_tech.each do |tech| -%>
-- <%= tech %>
-<%- end -%>
-<%- end -%>
+<div class="line">
+    <div><%= @from %> - <%= @until %></div>
+    <div>
+        <div><span><%= @name %></span>, <span><%= @location %></span></div>
+        <div><%= @description %></div>
+        <%- if defined?(@applied_tech) -%>
+        <div>Applied technologies: <%= @applied_tech.join(', ') %></div>
+        <%- end -%>
+    </div>
+</div>

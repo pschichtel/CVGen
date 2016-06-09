@@ -5,8 +5,12 @@ build_component() {
         exit 4
     fi
     
-    for i in "${experiences[@]}"
-    do
-        "${erb[@]}" -r "${comp_base}/${i}" "${template_dir}/experience.erb"
-    done
+    local c=$(
+        for i in "${experiences[@]}"
+        do
+            "${erb[@]}" -r "${comp_base}/${i}" "${template_dir}/experience.erb"
+        done
+    )
+    
+    CONTENT="$c" "${erb[@]}" "${template_dir}/experiences.erb"
 }
